@@ -25,10 +25,15 @@ body {
     border-radius: 15px 0 0 15px;
 }
 
+#patternDisplay div {
+    margin-left: 1.414em;
+}
+
 #bodySection {
     height: 100%;
     float: right;
     width: calc(68% - 2.828em);
+    position: relative;
 }
 
 p {margin-bottom: 1.3em; font-size: 1.2em;}
@@ -110,4 +115,8 @@ a:active {
       .font-display-unit {
           width: calc(100% - 4em)
       }
+}
+
+#submit {
+    font-weight: 700; font-family: 'Chivo'; font-size:16px; padding:16px; border-width:6px; border-radius:16px; border-style:solid; border-color:#096672; background-color:#e3dfff; color:#222222;
 }
