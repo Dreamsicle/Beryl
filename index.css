@@ -118,5 +118,5 @@ a:active {
 }
 
 #submit {
-    font-weight: 700; font-family: 'Chivo'; font-size:16px; padding:16px; border-width:6px; border-radius:16px; border-style:solid; border-color:#096672; background-color:#e3dfff; color:#222222;
+    cursor: pointer; font-weight: 700; font-family: 'Chivo'; font-size:16px; padding:16px; border-width:6px; border-radius:16px; border-style:solid; border-color:#096672; background-color:#e3dfff; color:#222222;
 }
