@@ -1,0 +1,113 @@
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    font-family: 'Chivo';
+    background-color: #028090;
+    color: #e3dfff;
+    border-radius: 15px;
+    margin: 15px;
+    width: 50%;
+    height: 50%;
+}
+
+#patternDisplay {
+    width: 32%;
+    height: 100%;
+    float: left;
+    background-repeat: repeat;
+    border-radius: 15px 0 0 15px;
+}
+
+#bodySection {
+    height: 100%;
+    float: right;
+    width: calc(68% - 2.828em);
+}
+
+p {margin-bottom: 1.3em; font-size: 1.2em;}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: 'Work Sans';
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 5.063em;
+}
+
+h2 {font-size: 3.375em;}
+
+h3 {font-size: 2.25em;}
+
+h4 {font-size: 1.5em;}
+
+small, .font_small {font-size: 0.667em;}
+
+.flex {
+    display: flex;
+}
+
+/* unvisited link */
+a:link {
+    color: #222222;
+}
+
+/* visited link */
+a:visited {
+    color: #222222;
+}
+
+/* mouse over link */
+a:hover {
+    color: #222222;
+}
+
+/* selected link */
+a:active {
+    color: #e3dfff;
+}
+
+/* responsive! */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+      .actualBody {
+        margin-left: 5em;
+        margin-right: 5em;
+      }
+
+      p {margin-bottom: 1.3em; font-size: 1.5em;}
+
+      .font-display {
+          flex-direction: column
+      }
+
+      .colorbar {
+          width: calc(100% - 4em)
+      }
+
+      .work-sans-display {
+          margin-left: 0 !important
+      }
+
+      .chivo-display {
+          margin-bottom: 4em
+      }
+
+      .font-display-unit {
+          width: calc(100% - 4em)
+      }
+}
