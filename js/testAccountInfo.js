@@ -1,17 +1,20 @@
 function testAccountInfo(username, password) {
 
+    var correctName
+    var correctPass
+
     hashpw(username, "$2a$08$b0MHMsT3ErLoTRjpjzsCie", function (hashed) {
         if (hashed === localStorage.username) {
-            var correctName = 'true'
+            correctName = true
         } else {
-            var correctName = 'false'
+            correctName = false
         }
     })
     hashpw(password, "$2a$08$b0MHMsT3ErLoTRjpjzsCie", function (hashed) {
         if (hashed === localStorage.password) {
-            var correctPass = 'true'
+            correctPass = true
         } else {
-            var correctPass = 'false'
+            correctPass = false
         }
     })
 
