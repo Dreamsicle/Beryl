@@ -4,14 +4,14 @@ function testAccountInfo(username, password) {
     var correctPass
 
     hashpw(username, "$2a$08$b0MHMsT3ErLoTRjpjzsCie", function (hashed) {
-        if (hashed === localStorage.username) {
+        if (hashed === localStorage.getItem("username")) {
             correctName = true
         } else {
             correctName = false
         }
     })
     hashpw(password, "$2a$08$b0MHMsT3ErLoTRjpjzsCie", function (hashed) {
-        if (hashed === localStorage.password) {
+        if (hashed === localStorage.getItem("password")) {
             correctPass = true
         } else {
             correctPass = false
