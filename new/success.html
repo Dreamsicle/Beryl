@@ -1,9 +1,9 @@
 <html id="thisIsJustForThePattern">
     <head>
         <title>Dreamsicle Beryl</title>
-        <link href="index.css" rel="stylesheet">
+        <link href="../index.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Chivo:400,700|Work+Sans:400,700" rel="stylesheet">
-        <script src="js/ourCode.js" defer></script>
+        <script src="../js/ourCode.js" defer></script>
         <script>
             console.info('Welcome to your developer tools! You may want to take a look at\nhttps://dev.dreamsicle.xyz')
         </script>
@@ -15,20 +15,10 @@
         </div>
         <div style="display:flex" id="patternDisplay"><div style="align-self: flex-end;"><h2>Beryl</h2></div></div>
         <div id="bodySection">
-            <h4 style="margin-bottom: calc(0.5em + 8px);">Sign In</h4>
-
-            <input id="username" type="text" name="username" placeholder="Username" style="font-size:16px; padding:16px; border-width:6px; border-radius:16px; border-style:solid; border-color:#096672; background-color:#e3dfff; color:#222222; margin-bottom: 8px; font-family: inherit"><br>
-
-            <input id="password" type="password" name="password" placeholder="Password" style="font-size:16px; padding:16px; border-width:6px; border-radius:16px; border-style:solid; border-color:#096672; background-color:#e3dfff; color:#222222;  font-family: inherit; margin-right: 4px;">
-            <input type="submit" id="submit" onclick="if (testAccountInfo(document.getElementById('username').value, document.getElementById('password').value) == true) { window.location.replace('new/success.html') } else { window.location.replace('about/') }" value="⏎"><br>
-            
-            <div style="position: absolute; bottom: calc(1.414em * 2)">
-                <span onclick="window.open('about/')" style="text-decoration: underline; cursor: pointer">What is this?</span> · <span onclick="window.open('new/')" style="text-decoration: underline; cursor: pointer">Need an account?</span> · <span style="color:#FFE1A8">A <b style="color: #FFBC42">Dreamsicle</b> Project</span>
-            </div>
+            <h4 style="margin-bottom: calc(0.5em + 8px);">Done</h4>
+            <p>Your account was created.</p>
         </div>
-        <script src="js/bCrypt.js"></script>
-        <script src="js/testAccountInfo.js"></script>
-	    <script src="js/theirCode.js"></script>
+	    <script src="../js/theirCode.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
                 var css = 'background: red; color: black; font-size: 16px; font-weight: bold'

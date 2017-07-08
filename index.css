@@ -32,8 +32,14 @@ body {
 #bodySection {
     height: 100%;
     float: right;
-    width: calc(68% - 2.828em);
+    width: calc(68% - (2.828em * 2));
     position: relative;
+    margin-right: 2.828em;
+    overflow: auto;
+}
+
+#bodySection::-webkit-scrollbar {
+    margin-left: 1px
 }
 
 p {margin-bottom: 1.3em; font-size: 1.2em;}
