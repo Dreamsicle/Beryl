@@ -3,6 +3,10 @@ function testAccountInfo(username, password) {
     var correctName
     var correctPass
 
+    if (hashpw(username, "$2a$08$b0MHMsT3ErLoTRjpjzsCie") === localStorage.getItem("username")) {
+        console.log('k')
+    }
+
     hashpw(username, "$2a$08$b0MHMsT3ErLoTRjpjzsCie", function (hashed) {
         if (hashed === localStorage.getItem("username")) {
             correctName = true

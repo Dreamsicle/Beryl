@@ -95,10 +95,33 @@ a:active {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
-      .actualBody {
-        margin-left: 5em;
-        margin-right: 5em;
-      }
+
+        html {
+            flex-direction: column;
+        }
+
+        body {
+            width: 100%;
+            height: 95%;
+        }
+
+        #patternDisplay {
+            width: 100%;
+            height: 20%;
+            float: left;
+            background-repeat: repeat;
+            border-radius: 15px 15px 0 0;
+        }
+
+        #bodySection {
+            height: 80%;
+            float: bottom right;
+            width: calc(100% - 16px);
+            position: relative;
+            margin-right: initial;
+            margin-left: 16px;
+            overflow: auto;
+        }
 
       p {margin-bottom: 1.3em; font-size: 1.5em;}
 
